@@ -5,12 +5,14 @@ body{
 }
 
 footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     height: 3rem;
     width: 100%;
     overflow: hidden;
+    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
 select {
