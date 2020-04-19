@@ -1,0 +1,21 @@
+body{
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  background-color: #FDF6E3;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 1rem;
+}
+
+select {
+  font-size: 36px;
+  font-family: 'Yeseva One', cursive;
+  border: none;
+}

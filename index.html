@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8"></meta>
+    <title>☦️ Калькулятор православной Пасхи</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- <year-picker /> -->
+    <audio autoplay>
+        <source src="bells.mp3" type="audio/mpeg">
+    </audio>
+
+      <h1>{{ name }}</h1>
+      <h1>🐇🥚🐟🍖🍗🥛</h1>
+
+      <h3>Выберите год</h3>
+      <select @change="calculateEaster" v-model="selected">
+        <option v-for="option in options" v-bind:value="option.value">
+          {{ option.text }}
+        </option>
+      </select>
+      <h2>Дата пасхи</h2>
+      <h3>
+        {{ easter }}
+      </h3>
+    </div>
+    <footer>
+      <a href="https://github.com/ston1x/orthodox-easter-calculator" style="text-decoration: none; color: grey;">github
+      </a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
